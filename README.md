@@ -56,6 +56,10 @@ This app was developed and hosted by [Good Heart Tech](https://goodhearttech.org
 - Font Awesome Icons
 - Hosted on Cloudflare Pages
 
+## 💻 Running Locally
+
+This is a static, client-side tool with no build step. Just clone or download the repo and open `index.html` in your browser. That's it, no server or installation needed.
+
 ## 🚀 Deployment
 
 1. Fork this repository to your GitHub account
