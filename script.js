@@ -429,11 +429,13 @@ copyBtn.addEventListener('click', async () => {
         await navigator.clipboard.writeText(text);
         
         // Show success state
-        copyBtn.style.backgroundColor = '#4CAF50';
+        copyBtn.style.backgroundColor = '#17653A';
+        copyBtn.style.color = '#FFFFFF';
         
         // Remove success state after animation
         setTimeout(() => {
             copyBtn.style.backgroundColor = '';
+            copyBtn.style.color = '';
         }, 2000);
     } catch (error) {
         console.error('Error copying text:', error);
