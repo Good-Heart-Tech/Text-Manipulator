@@ -11,6 +11,7 @@
     <meta name="theme-color" content="#FFFFFF">
     <meta name="color-scheme" content="light">
     <link rel="stylesheet" href="ght-variables.css">
+    <link rel="stylesheet" href="ght-buttons.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -101,8 +102,7 @@
             gap: 0.5rem;
             margin-bottom: 1rem;
             flex-wrap: wrap;
-            padding: 0.5rem;
-            background-color: var(--ght-palette-hudu-light);
+            padding: 0;
             border-radius: 4px;
         }
 
@@ -110,33 +110,12 @@
 
         .dropdown { position: relative; display: inline-block; }
 
-        .dropdown-btn, .btn {
-            background-color: var(--ght-palette-primary);
-            color: var(--ght-palette-rich-black);
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: var(--ght-font-family-body);
-            font-size: 1rem;
-            font-weight: var(--ght-font-weight-semibold);
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: background-color 0.2s, color 0.2s;
-        }
-
-        .dropdown-btn { padding: 0.5rem 1rem; min-width: 120px; justify-content: center; }
-        .btn { padding: 0.75rem 1.5rem; }
+        .dropdown-btn { min-width: 120px; }
         .btn i { font-size: 1.1rem; }
-
-        .dropdown-btn:hover, .btn:hover {
-            background-color: var(--ght-palette-hudu-primary);
-            color: var(--ght-palette-white);
-        }
 
         .dropdown-btn:focus-visible, .btn:focus-visible, .full-width-toggle:focus-visible,
         .dropdown-content a:focus-visible, #editor:focus-visible {
-            outline: 3px solid var(--ght-palette-rich-black);
+            outline: 3px solid var(--ght-palette-primary);
             outline-offset: 2px;
         }
 
@@ -289,20 +268,20 @@
         <main class="editor-container">
             <div class="toolbar">
                 <div class="toolbar-group">
-                    <button class="btn" id="undoBtn" title="Undo (Ctrl+Z)">
+                    <button class="btn ght-btn" id="undoBtn" title="Undo (Ctrl+Z)">
                         <i class="fas fa-undo"></i>
                         Undo (Ctrl+Z)
                     </button>
-                    <button class="btn" id="copyBtn" title="Copy to Clipboard">
+                    <button class="btn ght-btn" id="copyBtn" title="Copy to Clipboard">
                         <i class="fas fa-copy"></i>
                         Copy Text
                     </button>
-                    <button class="btn" id="downloadTxtBtn" title="Download as TXT">
+                    <button class="btn ght-btn" id="downloadTxtBtn" title="Download as TXT">
                         <i class="fas fa-file-alt"></i>
                         Download as TXT
                     </button>
                     <div class="dropdown">
-                        <button class="dropdown-btn" title="Cleanup">
+                        <button class="dropdown-btn ght-btn" title="Cleanup">
                             <i class="fas fa-broom"></i>
                             Cleanup
                             <i class="fas fa-chevron-down dropdown-indicator"></i>
@@ -321,7 +300,7 @@
                     </div>
 
                     <div class="dropdown">
-                        <button class="dropdown-btn" title="Formatting">
+                        <button class="dropdown-btn ght-btn" title="Formatting">
                             <i class="fas fa-text-height"></i>
                             Formatting
                             <i class="fas fa-chevron-down dropdown-indicator"></i>
@@ -343,7 +322,7 @@
                     </div>
 
                     <div class="dropdown">
-                        <button class="dropdown-btn" title="Conversion">
+                        <button class="dropdown-btn ght-btn" title="Conversion">
                             <i class="fas fa-exchange-alt"></i>
                             Conversion
                             <i class="fas fa-chevron-down dropdown-indicator"></i>

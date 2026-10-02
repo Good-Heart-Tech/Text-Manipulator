@@ -428,14 +428,12 @@ copyBtn.addEventListener('click', async () => {
         const text = editor.innerText;
         await navigator.clipboard.writeText(text);
         
-        // Show success state
-        copyBtn.style.backgroundColor = '#17653A';
-        copyBtn.style.color = '#FFFFFF';
-        
-        // Remove success state after animation
+        // Show confirmation by swapping the label and icon, button style stays the same
+        const originalHtml = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied';
+
         setTimeout(() => {
-            copyBtn.style.backgroundColor = '';
-            copyBtn.style.color = '';
+            copyBtn.innerHTML = originalHtml;
         }, 2000);
     } catch (error) {
         console.error('Error copying text:', error);
