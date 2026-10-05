@@ -45,7 +45,7 @@
             margin-bottom: 0.5rem;
         }
 
-        .subtitle a { color: var(--ght-palette-hudu-primary); text-decoration: underline; }
+        .subtitle a { color: var(--ght-palette-primary-dark); text-decoration: underline; }
         .subtitle a:hover { color: var(--ght-palette-rich-black); }
 
         .security-notice {
@@ -58,11 +58,11 @@
             justify-content: center;
         }
 
-        .security-notice i { font-size: 1rem; color: var(--ght-palette-hudu-primary); }
+        .security-notice i { font-size: 1rem; color: var(--ght-palette-primary-dark); }
 
         .editor-container {
-            background-color: color-mix(in srgb, var(--ght-palette-hudu-light) 30%, white);
-            border: 1px solid var(--ght-palette-hudu-light);
+            background-color: color-mix(in srgb, var(--ght-palette-primary-tint) 30%, white);
+            border: 1px solid var(--ght-palette-primary-tint);
             border-radius: 8px;
             padding: 1rem;
             margin-bottom: 2rem;
@@ -87,7 +87,7 @@
             right: 0.5rem;
             background: none;
             border: none;
-            color: var(--ght-palette-hudu-primary);
+            color: var(--ght-palette-primary-dark);
             cursor: pointer;
             padding: 0.5rem;
             font-size: 1.2rem;
@@ -128,7 +128,7 @@
             z-index: 1;
             border-radius: 4px;
             overflow: hidden;
-            border: 1px solid var(--ght-palette-hudu-light);
+            border: 1px solid var(--ght-palette-primary-tint);
         }
 
         .dropdown:hover .dropdown-content { display: block; }
@@ -141,7 +141,7 @@
             transition: background-color 0.2s;
         }
 
-        .dropdown-content a:hover { background-color: var(--ght-palette-hudu-light); }
+        .dropdown-content a:hover { background-color: var(--ght-palette-primary-tint); }
         .dropdown-content a:active { background-color: var(--ght-palette-primary); color: var(--ght-palette-rich-black); }
 
         #editor {
@@ -149,7 +149,7 @@
             width: 100%;
             padding: 1rem;
             background-color: var(--ght-palette-white);
-            border: 1px solid var(--ght-palette-hudu-light);
+            border: 1px solid var(--ght-palette-primary-tint);
             border-radius: 4px;
             color: var(--ght-palette-charcoal);
             font-family: var(--ght-font-family-body);
@@ -166,8 +166,8 @@
         .stats-container {
             margin: 1rem 0;
             padding: 1rem;
-            background-color: color-mix(in srgb, var(--ght-palette-hudu-light) 30%, white);
-            border: 1px solid var(--ght-palette-hudu-light);
+            background-color: color-mix(in srgb, var(--ght-palette-primary-tint) 30%, white);
+            border: 1px solid var(--ght-palette-primary-tint);
             border-radius: 4px;
             color: var(--ght-palette-charcoal);
             font-size: 0.9rem;
@@ -201,7 +201,7 @@
             border-radius: 50%;
         }
 
-        input:checked + .toggle-slider { background-color: var(--ght-palette-hudu-primary); }
+        input:checked + .toggle-slider { background-color: var(--ght-palette-primary-dark); }
         input:checked + .toggle-slider:before { transform: translateX(20px); }
         input:focus-visible + .toggle-slider { outline: 3px solid var(--ght-palette-rich-black); outline-offset: 2px; }
 
@@ -211,7 +211,7 @@
             display: none;
             margin-top: 1rem;
             padding-top: 1rem;
-            border-top: 1px solid var(--ght-palette-hudu-light);
+            border-top: 1px solid var(--ght-palette-primary-tint);
         }
 
         .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
@@ -232,8 +232,8 @@
         .loading-overlay.active { display: flex; }
         .loading-spinner {
             width: 50px; height: 50px;
-            border: 5px solid var(--ght-palette-hudu-light);
-            border-top: 5px solid var(--ght-palette-hudu-primary);
+            border: 5px solid var(--ght-palette-primary-tint);
+            border-top: 5px solid var(--ght-palette-primary-dark);
             border-radius: 50%;
             animation: spin 1s linear infinite;
             margin-bottom: 1rem;
@@ -242,15 +242,15 @@
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
         /* Good Heart Tech standard app footer, light mode. */
-        .ght-footer { width: 100%; margin-top: auto; padding: 22px 24px 26px; text-align: center; background: color-mix(in srgb, var(--ght-palette-hudu-light) 30%, white); border-top: 1px solid var(--ght-palette-hudu-light); color: var(--ght-palette-charcoal); }
+        .ght-footer { width: 100%; margin-top: auto; padding: 22px 24px 26px; text-align: center; background: color-mix(in srgb, var(--ght-palette-primary-tint) 30%, white); border-top: 1px solid var(--ght-palette-primary-tint); color: var(--ght-palette-charcoal); }
         .ght-footer-note { max-width: 52rem; margin: 0 auto 16px; font-size: .8125rem; font-style: italic; }
         .ght-footer-row { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
         .ght-footer-logo img { display: block; height: 30px; width: auto; }
         .ght-footer-copy { font-size: .9375rem; }
-        .ght-footer-donate { display: inline-flex; line-height: 1.2; align-items: center; gap: 8px; padding: 9px 22px; border-radius: 8px; background: var(--ght-palette-hudu-primary); color: var(--ght-palette-white); font-weight: var(--ght-font-weight-semibold); text-decoration: none; }
+        .ght-footer-donate { display: inline-flex; line-height: 1.2; align-items: center; gap: 8px; padding: 9px 22px; border-radius: 8px; background: var(--ght-palette-primary-dark); color: var(--ght-palette-white); font-weight: var(--ght-font-weight-semibold); text-decoration: none; }
         .ght-footer-donate:hover { background: var(--ght-palette-rich-black); color: var(--ght-palette-white); }
         .ght-footer-github { display: inline-flex; color: var(--ght-palette-rich-black); }
-        .ght-footer-github:hover { color: var(--ght-palette-hudu-primary); }
+        .ght-footer-github:hover { color: var(--ght-palette-primary-dark); }
         .ght-footer a:focus-visible { outline: 3px solid var(--ght-palette-primary); outline-offset: 3px; }
     </style>
 </head>
